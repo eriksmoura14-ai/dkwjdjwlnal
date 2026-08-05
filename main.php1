@@ -1,0 +1,16 @@
+<?php
+echo "digite o primeiro numero: ";
+$n1 = readline ();
+echo "Digite o segundo numero: ";
+$n2 = readline ();
+$mult = $n1 * $n2;
+$div = $n1 / $n2;
+$adc = $n1 + $n2;
+$sub = $n1 - $n2;
+$mod = $n1 % $n2;
+echo "O resultado em multiplicação é: $mult\n";
+echo "O resultado em divisao é: $div\n";
+echo "O resultado em adição é: $adc\n";
+echo "O resultado em subtração é: $sub\n";
+echo "O resultado em modulo é: $mod\n";
+?>
