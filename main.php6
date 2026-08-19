@@ -1,0 +1,19 @@
+<?php
+class Produto {
+    public $nome;
+    public $preço;
+    public $quantidade;
+    public $marca;
+}
+$meuProduto = New Produto();
+$meuProduto -> nome = "Arroz";
+$meuProduto-> preço = 20.00;
+$meuProduto -> quantidade = 1;
+$meuProduto -> marca = "Cristal";
+echo $meuProduto -> nome;
+echo"\n";
+echo $meuProduto-> preço;
+echo"\n";
+echo $meuProduto-> quantidade;
+echo"\n";
+echo $meuProduto-> marca;
