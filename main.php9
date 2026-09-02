@@ -1,0 +1,16 @@
+<?php
+class Endereco {
+    public readonly string $cep;
+    public readonly string $rua;
+    public readonly string $cidade;
+
+    public function __construct($cep, $rua, $cidade) {
+        $this->cep = $cep;
+        $this->rua = $rua;
+        $this->cidade = $cidade;
+    }
+}
+
+$endereco = new Endereco("01000-000", "Av Paulista", "São Paulo");
+echo $endereco->rua . "\n";
+echo $endereco->cidade;
