@@ -1,0 +1,19 @@
+<?php
+class EntidadeDinamica {
+    private $dados = array();
+
+    public function __set($nome, $valor) {
+        $this->dados[$nome] = $valor;
+    }
+
+    public function __get($nome) {
+        return $this->dados[$nome];
+    }
+}
+
+$entidade = new EntidadeDinamica();
+$entidade->cor = "azul";
+$entidade->tamanho = "G";
+
+echo $entidade->cor . "\n";
+echo $entidade->tamanho;
