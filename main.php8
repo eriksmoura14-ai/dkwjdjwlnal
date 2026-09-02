@@ -1,0 +1,36 @@
+<?php
+interface MetodoPagamentoInterface {
+    public function processar($valor);
+}
+
+class Pix implements MetodoPagamentoInterface {
+    public function processar($valor) {
+        return $valor > 0;
+    }
+}
+
+class CartaoCredito implements MetodoPagamentoInterface {
+    public function processar($valor) {
+        return $valor > 0;
+    }
+}
+
+class Boleto implements MetodoPagamentoInterface {
+    public function processar($valor) {
+        return $valor > 0;
+    }
+}
+
+class Checkout {
+    public function executar($metodo, $valor) {
+        if ($metodo->processar($valor)) {
+            echo "Pagamento aprovado de R$ " . $valor . "\n";
+        } else {
+            echo "Pagamento reprovado\n";
+        }
+    }
+}
+
+$checkout = new Checkout();
+$checkout->executar(new Pix(), 100);
+$checkout->executar(new Boleto(), -50);
