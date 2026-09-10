@@ -1,0 +1,22 @@
+n1=input("Digite um nome")
+n2=input("Digite um nome")
+n3=input("Digite um nome")
+n4=input("Digite um nome")
+n5=input("Digite um nome")
+n6=input("Digite um nome")
+n7=input("Digite um nome")
+n8=input("Digite um nome")
+n9=input("Digite um nome")
+n10=input("Digite um nome")
+lista = [n1,n2,n3,n4,n5,n6,n7,n8,n9,n10];
+busca = input ("Digite o nome que deseja buscar: ")
+encontrado = False
+
+for nome in lista:
+    if nome == busca:
+        encontrado = True
+
+if encontrado:
+    print("nome encontrado na lista!")
+else:
+    print("Este nome nao foi encontrado na lista!!")
