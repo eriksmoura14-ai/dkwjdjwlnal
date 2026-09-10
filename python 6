@@ -1,0 +1,9 @@
+matriz = [
+    [3, 0, 0],
+    [0, 0, 0]
+]
+soma = 0 
+for i in range (2):
+    for j in range (3):
+        soma = soma + matriz [i][j]
+print ("A soma de todos os numeros na matriz é: ", soma)
